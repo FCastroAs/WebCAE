@@ -43,7 +43,5 @@ i
 9src/main/java/edu/uoc/webcae/servicio/PersonaService.java,a\4\a4f0bb92a8931f2f6e26e5d77aa0d02ccf02b104
 h
 8src/main/java/edu/uoc/webcae/util/EncriptarPassword.java,3\8\38bef5a1749d3e5d2df8faee0f13aff9c79bd8c9
-`
-0src/main/java/edu/uoc/webcae/domain/Usuario.java,2\2\22c991b0d4f381e25dc2cf2a35c53f696f4edbee
 d
 4src/main/java/edu/uoc/webcae/web/SecurityConfig.java,e\e\ee597b74d36fb6050be1ef8e95bd8fd0c209de46
