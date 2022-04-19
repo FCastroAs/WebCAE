@@ -27,8 +27,6 @@ i
 9src/main/java/edu/uoc/webcae/servicio/UsuarioService.java,c\3\c3759faca64d38769f1d2ab1b32675ba8c6fff09
 ]
 -src/main/java/edu/uoc/webcae/domain/Obra.java,0\9\09c7afd3500d61711df621572a0471aeaef03280
-U
-%.mvn/wrapper/maven-wrapper.properties,3\2\32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
 8
 mvnw.cmd,1\f\1f1763f358c257ea3515417352b82b0165647ad1
 `
