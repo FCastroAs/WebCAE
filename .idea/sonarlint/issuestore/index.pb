@@ -15,8 +15,6 @@ m
 0src/main/java/edu/uoc/webcae/dao/UsuarioDao.java,3\8\38ac3c28675bea383a02f74713e60fe2a0105888
 `
 0src/main/java/edu/uoc/webcae/dao/PersonaDao.java,e\d\ed0ae7ac07b45b93f5bcfa42e7dcf6ba63614893
-h
-8src/test/java/edu/uoc/webcae/WebCaeApplicationTests.java,7\5\7549d965322e74a277e0a32520f6a4cec2d2a428
 `
 0src/main/java/edu/uoc/webcae/domain/Cliente.java,9\7\975eb612c27f35b061418f0ed276e36915f1a0f2
 4

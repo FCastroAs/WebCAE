@@ -1,7 +1,6 @@
 package edu.uoc.webcae.web;
 
 import edu.uoc.webcae.domain.Cliente;
-import edu.uoc.webcae.domain.Persona;
 import edu.uoc.webcae.domain.Usuario;
 import edu.uoc.webcae.servicio.ClienteService;
 import edu.uoc.webcae.servicio.UsuarioServiceImpl;
@@ -32,7 +31,7 @@ public class ControladorResumen {
         Usuario usuario = usuarioServiceImpl.findByUsername(user.getUsername());
         var clientes = usuario.getClientes();
         model.addAttribute("clientes", clientes);
-        return "resumen";
+        return "index";
     }
 
     @GetMapping("/agregar")
