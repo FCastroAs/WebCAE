@@ -2,6 +2,17 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/dao/PersonaDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/dao/UsuarioDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/domain/Persona.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/domain/Rol.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/domain/Usuario.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/servicio/PersonaService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/servicio/PersonaServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/servicio/UsuarioServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/util/EncriptarPassword.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/web/ControladorInicio.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/web/SecurityConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/edu/uoc/webcae/web/WebConfig.java" charset="UTF-8" />
   </component>
 </project>
