@@ -4,7 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -13,7 +12,6 @@ import java.util.Set;
 @Data
 @Table(name="tipo_documento")
 public class TipoDocumento implements Serializable {
-    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
