@@ -43,3 +43,12 @@ h
 8src/main/java/edu/uoc/webcae/util/EncriptarPassword.java,3\8\38bef5a1749d3e5d2df8faee0f13aff9c79bd8c9
 d
 4src/main/java/edu/uoc/webcae/web/SecurityConfig.java,e\e\ee597b74d36fb6050be1ef8e95bd8fd0c209de46
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+i
+9src/main/java/edu/uoc/webcae/servicio/ClienteService.java,e\7\e775aa358d88b2d236c6e308adccee888d9c8ca3
+m
+=src/main/java/edu/uoc/webcae/servicio/ClienteServiceImpl.java,6\2\628cf2dd11e30c23448f12f60bcb76e7ccb9948f
+h
+8src/test/java/edu/uoc/webcae/WebCaeApplicationTests.java,7\5\7549d965322e74a277e0a32520f6a4cec2d2a428
