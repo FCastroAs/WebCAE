@@ -38,6 +38,20 @@ INSERT INTO `usuario` (`id_usuario`, `username`, `password`, `email`) VALUES
 	(3, 'user2', '$2a$10$XIS3WsaI8i0TfOIE8C/4XuJ/ULeyEvtbMAcD3nXO7kkpvXakQyYAO', 'fcastroas@uoc.edu');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
+-- Volcando estructura para tabla WebCAE.tipo_documento
+DROP TABLE IF EXISTS `tipo_documento`;
+CREATE TABLE IF NOT EXISTS `tipo_documento` (
+  `id_tipo_documento` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `vencimiento` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_tipo_documento`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Volcando datos para la tabla WebCAE.tipo_documento: ~0 rows (aproximadamente)
+DELETE FROM `tipo_documento`;
+/*!40000 ALTER TABLE `tipo_documento` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tipo_documento` ENABLE KEYS */;
+
 -- Volcando estructura para tabla WebCAE.cliente
 DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE IF NOT EXISTS `cliente` (
@@ -111,19 +125,7 @@ INSERT INTO `rol` (`id_rol`, `nombre`, `id_usuario`) VALUES
 	(4, 'ROLE_USER', 3);
 /*!40000 ALTER TABLE `rol` ENABLE KEYS */;
 
--- Volcando estructura para tabla WebCAE.tipo_documento
-DROP TABLE IF EXISTS `tipo_documento`;
-CREATE TABLE IF NOT EXISTS `tipo_documento` (
-  `id_tipo_documento` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(50) NOT NULL,
-  `vencimiento` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_tipo_documento`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla WebCAE.tipo_documento: ~0 rows (aproximadamente)
-DELETE FROM `tipo_documento`;
-/*!40000 ALTER TABLE `tipo_documento` DISABLE KEYS */;
-/*!40000 ALTER TABLE `tipo_documento` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;

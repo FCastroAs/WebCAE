@@ -40,3 +40,7 @@ m
 =src/main/java/edu/uoc/webcae/servicio/ClienteServiceImpl.java,6\2\628cf2dd11e30c23448f12f60bcb76e7ccb9948f
 h
 8src/test/java/edu/uoc/webcae/WebCaeApplicationTests.java,7\5\7549d965322e74a277e0a32520f6a4cec2d2a428
+U
+%.mvn/wrapper/maven-wrapper.properties,3\2\32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
+_
+/src/main/java/edu/uoc/webcae/web/WebConfig.java,d\8\d828d72ed35d67f209838fa3cd51c42229e6bc87
