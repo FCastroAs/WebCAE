@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="WebCAE@node96-webcae.fenton-cannibal.jele.cloud" uuid="a650f5bf-162a-49f0-bfd8-44558f4ec8cc">
+    <data-source source="LOCAL" name="WebCAE@node98-webcae.fenton-cannibal.jele.cloud" uuid="a650f5bf-162a-49f0-bfd8-44558f4ec8cc">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://node96-webcae.fenton-cannibal.jele.cloud:11000/WebCAE</jdbc-url>
+      <jdbc-url>jdbc:mariadb://node98-webcae.fenton-cannibal.jele.cloud:11000/WebCAE</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

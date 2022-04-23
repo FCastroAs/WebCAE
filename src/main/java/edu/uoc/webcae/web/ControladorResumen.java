@@ -31,28 +31,35 @@ public class ControladorResumen {
         Usuario usuario = usuarioServiceImpl.findByUsername(user.getUsername());
         var clientes = usuario.getClientes();
         model.addAttribute("clientes", clientes);
-        return "index";
+        return "resumen";
     }
 
     @GetMapping("/agregar")
     public String agregar(Cliente cliente){
-        return "modificar";
+        return "ficha_cliente";
     }
 
     @PostMapping("/guardar")
     public String guardar(@Valid Cliente cliente, Errors errores){
         if(errores.hasErrors()){
-            return "modificar";
+            return "ficha_cliente";
         }
-        clienteService.guardar(cliente);
+
+        Cliente clienteGuardar = clienteService.encontrarCliente(cliente);
+        clienteGuardar.setNombre(cliente.getNombre());
+        clienteGuardar.setCif(cliente.getCif());
+        clienteGuardar.setResponsable(cliente.getResponsable());
+        clienteGuardar.setEmail(cliente.getEmail());
+
+        clienteService.guardar(clienteGuardar);
         return "redirect:/";
     }
 
-    @GetMapping("/editar/{idPersona}")
+    @GetMapping("/editar/{idCliente}")
     public String editar(Cliente cliente, Model model){
         cliente = clienteService.encontrarCliente(cliente);
-        model.addAttribute("persona", cliente);
-        return "modificar";
+        model.addAttribute("cliente", cliente);
+        return "ficha_cliente";
     }
 
     @GetMapping("/eliminar")

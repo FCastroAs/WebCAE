@@ -17,18 +17,18 @@
                 <tr>
                     <th>[[#{cliente.nombre}]]</th>
                     <th>[[#{cliente.cif}]]</th>
-                    <th>[[#{persona.responsable}]]</th>
-                    <th>[[#{persona.email}]]</th>
-                    <th sec:authorize="hasRole('ROLE_ADMIN')">[[#{accion.editar}]]</th>
-                    <th sec:authorize="hasRole('ROLE_ADMIN')">[[#{accion.eliminar}]]</th>
+                    <th>[[#{cliente.responsable}]]</th>
+                    <th>[[#{cliente.email}]]</th>
+                    <th sec:authorize="hasRole('ROLE_USER')">[[#{accion.editar}]]</th>
+                    <th sec:authorize="hasRole('ROLE_USER')">[[#{accion.eliminar}]]</th>
                 </tr>
                 <tr th:each="cliente : ${clientes}">
                     <td th:text="${cliente.nombre}">Mostrar Nombre</td>
                     <td th:text="${cliente.cif}">Mostrar CIF</td>
                     <td th:text="${cliente.responsable}">Mostrar Responsable</td>
                     <td th:text="${cliente.email}">Mostrar Email</td>
-                    <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/editar/} + ${cliente.idCliente}"/>[[#{accion.editar}]]</td>
-                    <td sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/eliminar(idCliente=${cliente.idCliente})}"/>[[#{accion.eliminar}]]</td>
+                    <td sec:authorize="hasRole('ROLE_USER')"><a th:href="@{/editar/} + ${cliente.idCliente}"/>[[#{accion.editar}]]</td>
+                    <td sec:authorize="hasRole('ROLE_USER')"><a th:href="@{/eliminar(idCliente=${cliente.idCliente})}"/>[[#{accion.eliminar}]]</td>
                 </tr>
             </table>
         </div>
