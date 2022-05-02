@@ -34,37 +34,4 @@ public class ControladorResumen {
         return "resumen";
     }
 
-    @GetMapping("/agregar")
-    public String agregar(Cliente cliente){
-        return "ficha_cliente";
-    }
-
-    @PostMapping("/guardar")
-    public String guardar(@Valid Cliente cliente, Errors errores){
-        if(errores.hasErrors()){
-            return "ficha_cliente";
-        }
-
-        Cliente clienteGuardar = clienteService.encontrarCliente(cliente);
-        clienteGuardar.setNombre(cliente.getNombre());
-        clienteGuardar.setCif(cliente.getCif());
-        clienteGuardar.setResponsable(cliente.getResponsable());
-        clienteGuardar.setEmail(cliente.getEmail());
-
-        clienteService.guardar(clienteGuardar);
-        return "redirect:/resumen";
-    }
-
-    @GetMapping("/editar/{idCliente}")
-    public String editar(Cliente cliente, Model model){
-        cliente = clienteService.encontrarCliente(cliente);
-        model.addAttribute("cliente", cliente);
-        return "ficha_cliente";
-    }
-
-    @GetMapping("/eliminar")
-    public String eliminar(Cliente cliente){
-        clienteService.eliminar(cliente);
-        return "redirect:/resumen";
-    }
 }

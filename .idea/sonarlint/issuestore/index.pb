@@ -40,8 +40,6 @@ U
 db.sql,2\1\217da5343dc709466933fc0497ae38d92f937136
 `
 0src/main/java/edu/uoc/webcae/dao/ClienteDao.java,e\e\ee6d68a173b824c046413dbf4dc1d7b411907cf4
-]
--src/main/java/edu/uoc/webcae/domain/Obra.java,0\9\09c7afd3500d61711df621572a0471aeaef03280
 `
 0src/main/java/edu/uoc/webcae/domain/Persona.java,4\9\49aad525556eb49083bc1bbda9d60dfc9c269d49
 \
@@ -50,11 +48,7 @@ f
 6src/main/java/edu/uoc/webcae/domain/TipoDocumento.java,8\a\8ae70b7e7f7a628e5cb4ba0d29edc8a37ede9cf5
 `
 0src/main/java/edu/uoc/webcae/domain/Usuario.java,2\2\22c991b0d4f381e25dc2cf2a35c53f696f4edbee
-`
-0src/main/java/edu/uoc/webcae/domain/Cliente.java,9\7\975eb612c27f35b061418f0ed276e36915f1a0f2
-i
-9src/main/java/edu/uoc/webcae/servicio/ClienteService.java,e\7\e775aa358d88b2d236c6e308adccee888d9c8ca3
-m
-=src/main/java/edu/uoc/webcae/servicio/ClienteServiceImpl.java,6\2\628cf2dd11e30c23448f12f60bcb76e7ccb9948f
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+c
+3src/main/java/edu/uoc/webcae/WebCaeApplication.java,8\4\849073733ac933b257b4da5e19b05871be27b94a
+d
+4src/main/java/edu/uoc/webcae/web/SecurityConfig.java,e\e\ee597b74d36fb6050be1ef8e95bd8fd0c209de46

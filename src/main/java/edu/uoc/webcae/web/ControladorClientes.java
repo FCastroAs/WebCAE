@@ -1,8 +1,10 @@
 package edu.uoc.webcae.web;
 
 import edu.uoc.webcae.domain.Cliente;
+import edu.uoc.webcae.domain.Obra;
 import edu.uoc.webcae.domain.Usuario;
 import edu.uoc.webcae.servicio.ClienteService;
+import edu.uoc.webcae.servicio.ObraService;
 import edu.uoc.webcae.servicio.UsuarioServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,9 @@ public class ControladorClientes {
 
     @Autowired
     private ClienteService clienteService;
+
+    @Autowired
+    private ObraService obraService;
 
     @Autowired
     private UsuarioServiceImpl usuarioServiceImpl;
@@ -74,4 +79,25 @@ public class ControladorClientes {
         clienteService.eliminar(cliente);
         return "redirect:/clientes";
     }
+
+    @GetMapping("/clientes/nueva_obra/{idCliente}")
+    public String nuevaObra(Cliente cliente, Model model){
+        cliente = clienteService.encontrarCliente(cliente);
+        Obra obra = new Obra();
+        obra.setCliente(cliente);
+        model.addAttribute("cliente", cliente);
+        model.addAttribute("obra", obra);
+        return "ficha_obra";
+    }
+
+    @PostMapping("/clientes/guardar_obra")
+    public String guardar(@Valid Obra obra, Model model, Errors errores, @AuthenticationPrincipal User user){
+        if(errores.hasErrors()){
+            return "ficha_obra";
+        }
+
+        obraService.guardar(obra);
+        return "redirect:/clientes";
+    }
+
 }

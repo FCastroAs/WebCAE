@@ -24,6 +24,10 @@ public class Obra implements Serializable {
 
     private String descripcion;
 
+    @ManyToOne
+    @JoinColumn(name = "id_cliente")
+    private Cliente cliente;
+
     @ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
             name = "obra_documento",

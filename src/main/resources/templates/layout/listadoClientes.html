@@ -32,17 +32,25 @@
                                             <td>[[${cliente.nombre}]]</td>
                                             <td>[[${cliente.cif}]]</td>
                                             <td>
-                                                <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/editar/} + ${cliente.idCliente}"
+                                                <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/clientes/editar/} + ${cliente.idCliente}"
                                                     class="btn btn-secondary">
                                                        <i class="fas fa-angle-double-right"></i> [[#{accion.editar}]]
                                                 </a>
                                             </td>
                                             <td>
-                                                <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/eliminar(idCliente=${cliente.idCliente})}"
+                                                <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/clientes/eliminar(idCliente=${cliente.idCliente})}"
                                                     class="btn btn-dark">
                                                        <i class="fas fa-angle-double-right"></i> [[#{accion.eliminar}]]
                                                 </a>
                                             </td>
+                                            <!--
+                                            <td>
+                                                <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/clientes/nueva_obra/} + ${cliente.idCliente}"
+                                                   class="btn btn-secondary">
+                                                    <i class="fas fa-angle-double-right"></i> [[#{accion.nueva-obra}]]
+                                                </a>
+                                            </td>
+                                            -->
                                         </tr>
                                     </tbody>
                                 </table>

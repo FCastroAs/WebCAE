@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title>Listado Clientes</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <section th:fragment="listadoResumen" id="resumen">
+            <br>
+            <h4>[[#{resumen.titulo-lista}]]</h4>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card p-2" th:each="cliente, contador : ${clientes}">
+                            <div class="card-header">
+                                <h4>[[${cliente.nombre}]]</h4>
+                            </div>
+                            <table class="table table-stryped" th:if="${cliente.obras != null and !cliente.obras.empty}">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th th:text="#{obra.nombre}">Nombre</th>
+                                        <th th:text="#{obra.descripcion}">Descripción</th>
+                                        <th th:text="#{resumen.documentacion}">Documentación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="obra, contador : ${cliente.obras}">
+                                        <td>[[${obra.nombre}]]</td>
+                                        <td>[[${obra.descripcion}]]</td>
+                                        <td><i class="fas fa-solid fa-check"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="text-center" th:if="${cliente.obras == null or cliente.obras.empty}">
+                                <span th:text="#{obra.lista-vacia}">Lista vacía</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
