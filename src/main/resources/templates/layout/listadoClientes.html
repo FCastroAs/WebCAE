@@ -10,7 +10,7 @@
         <section th:fragment="listadoClientes" id="clientes">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4>[[#{cliente.titulo-lista}]]</h4>
@@ -19,25 +19,24 @@
                                 <table class="table table-stryped">
                                     <thead class="thead-dark">
                                         <tr>
-                                            <th>#</th>
                                             <th th:text="#{cliente.nombre}">Nombre</th>
                                             <th th:text="#{cliente.cif}">CIF</th>
-                                            <th></th>
-                                            <th></th>
+                                            <th th:text="#{cliente.responsable}">Responsable</th>
+                                            <th th:text="#{cliente.email}">Email</th>
+                                            <th th:text="#{cliente.acciones}">Email</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr th:each="cliente, contador : ${clientes}">
-                                            <td>[[${contador.count}]]</td>
                                             <td>[[${cliente.nombre}]]</td>
                                             <td>[[${cliente.cif}]]</td>
+                                            <td>[[${cliente.responsable}]]</td>
+                                            <td>[[${cliente.email}]]</td>
                                             <td>
                                                 <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/clientes/editar/} + ${cliente.idCliente}"
                                                     class="btn btn-secondary">
                                                        <i class="fas fa-angle-double-right"></i> [[#{accion.editar}]]
                                                 </a>
-                                            </td>
-                                            <td>
                                                 <a sec:authorize="hasRole('ROLE_USER')" th:href="@{/clientes/eliminar(idCliente=${cliente.idCliente})}"
                                                     class="btn btn-dark">
                                                        <i class="fas fa-angle-double-right"></i> [[#{accion.eliminar}]]

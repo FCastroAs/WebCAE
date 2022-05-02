@@ -8,13 +8,13 @@
     </head>
     <body>
         <section th:fragment="listadoResumen" id="resumen">
-            <br>
-            <h4>[[#{resumen.titulo-lista}]]</h4>
-            <br>
             <div class="container">
+                <div class="row py-4">
+                    <h4>[[#{resumen.titulo-lista}]]</h4>
+                </div>
                 <div class="row">
                     <div class="col-md-9">
-                        <div class="card p-2" th:each="cliente, contador : ${clientes}">
+                        <div class="card mb-4" th:each="cliente, contador : ${clientes}">
                             <div class="card-header">
                                 <h4>[[${cliente.nombre}]]</h4>
                             </div>

@@ -46,8 +46,6 @@ U
 ,src/main/java/edu/uoc/webcae/domain/Rol.java,6\0\60610eea9fb9296825bed6335f0c12934ca4b0a1
 f
 6src/main/java/edu/uoc/webcae/domain/TipoDocumento.java,8\a\8ae70b7e7f7a628e5cb4ba0d29edc8a37ede9cf5
-`
-0src/main/java/edu/uoc/webcae/domain/Usuario.java,2\2\22c991b0d4f381e25dc2cf2a35c53f696f4edbee
 c
 3src/main/java/edu/uoc/webcae/WebCaeApplication.java,8\4\849073733ac933b257b4da5e19b05871be27b94a
 d

@@ -23,6 +23,8 @@ public class Usuario implements Serializable{
     private String password;
 
     private String email;
+
+    private String nombre;
     
     @OneToMany
     @JoinColumn(name="id_usuario")
