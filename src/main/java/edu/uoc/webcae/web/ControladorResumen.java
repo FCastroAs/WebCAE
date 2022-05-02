@@ -1,6 +1,5 @@
 package edu.uoc.webcae.web;
 
-import edu.uoc.webcae.domain.Cliente;
 import edu.uoc.webcae.domain.Usuario;
 import edu.uoc.webcae.servicio.ClienteService;
 import edu.uoc.webcae.servicio.UsuarioServiceImpl;
@@ -10,11 +9,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-
-import javax.validation.Valid;
 
 @Controller
 @Slf4j
